@@ -131,5 +131,3 @@ PS: it's long because I intend to use it for other purposes in the future too :)
   * <a href="https://docs.microsoft.com/en-us/windows/wsl/about">WSL</a>
 
 <hr>
-
-<h2><b>DOCUMENT WORK IN PROGRESS AS WE DISCUSS PROJECTS AND EVERYTHING</b></h2>
