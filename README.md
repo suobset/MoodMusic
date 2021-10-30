@@ -1,5 +1,24 @@
 # HackUmass IX: Nov 5-7, 2021
 
+## Regarding the current status of this repo
+
+Added lots of placeholder files that I took from another project I did. Let's meet and I'll tell everything (IT IS NOT THE FINAL PROJECT, IT IS ONLY A PLACEHOLDER SO THAT OUR REPO HAS A STRUCTURE. LATER ON, WE WILL ONLY ADD FILES TO THIS STRUCTURE WITHOUT WORRYING ABOUT WORKFLOWS OR ANYTHING).
+
+* js: JavaScript files to make interactive stuff and backend work, including APIs and self written code to make website more interactive
+* css: Cascading Style Sheets: tell the HTML how to show what to show
+* pages: All HTML EXCEPT ```index.html``` (that is the homepage, lives in the root directory)
+* assets: all media, graphics, API jargon, misc stuff
+
+Sample project taken from <a href="https://github.com/suobset/icons">my work at iCons</a>. Here is that <a href="https://suobset.github.io/iCons/iCons1-CS2/">main website btw</a>, all complete with interactive maps, charts, etc. 
+
+Every interactive element, including the drop down menus and the charts/maps were written by me in JavaScript. 
+
+The style of the website (blue background, those boxes, UI/UX and everything) is CSS.
+
+The main data being showed is via HTML (take HTML + CSS as the equivalent of LaTeX. LaTeX isn't inherently code, it doesn't do any interactive stuff. It only tells how to display that data. The interactive is JavaScript in our case.)
+
+<hr>
+
 ## A mostly complete, everchanging, intermediate guide to setting up for any code competition.
 
 But we will use it for HackUmass IX 
