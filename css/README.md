@@ -1,6 +1,6 @@
 # ~/css
 
-CSS basically "tells" the TML files how to display the data as given. 
+CSS basically "tells" the HTML files how to display the data as given. 
 It can be overlayed into HTMLusing the ```<style>``` tag, but it is ALWAYS better to have it in a different file and folder, so that the HTML code is not super huge and visual details are separated from data that is to be displayed. 
 Also takes lesser time to troubleshoot and edit. 
 
