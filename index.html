@@ -12,50 +12,9 @@
         <h1>playBack</h1>
         </div>
         <link rel="stylesheet" type="text/css" href="css/menu_style.css">
-     <!-- TODO: Fix weird spacing issue in div home -->
-        <div id="home">
-            <h1>Spotify Web Playback SDK Quick Start</h1>
-            <button id="togglePlay">Toggle Play</button>
-            <script src="https://sdk.scdn.co/spotify-player.js"></script>
-            <script>
-                window.onSpotifyWebPlaybackSDKReady = () => {
-                    const token = 'BQC3ifHfnfLdHzZ-cXTqBxgqYPGthcfuM3MY8vKDRffhQrxfEMhGB07R6szkdtp6zyeA8aE4-i-VVvbwMAT60wlfgufcM0u4Rg5JbyHALr3illsU4Y4MvotnyGw_W4psfnNXRxOikDdtIZ9OcWn8wQhG0i0ObsjaTBY7oxlSL1N47rcToH4c_kI';
-                    const player = new Spotify.Player({
-                        name: 'Web Playback SDK Quick Start Player',
-                        getOAuthToken: cb => { cb(token); },
-                        volume: 0.5
-                    });
-        
-                    // Ready
-                    player.addListener('ready', ({ device_id }) => {
-                        console.log('Ready with Device ID', device_id);
-                    });
-        
-                    // Not Ready
-                    player.addListener('not_ready', ({ device_id }) => {
-                        console.log('Device ID has gone offline', device_id);
-                    });
-        
-                    player.addListener('initialization_error', ({ message }) => {
-                        console.error(message);
-                    });
-        
-                    player.addListener('authentication_error', ({ message }) => {
-                        console.error(message);
-                    });
-        
-                    player.addListener('account_error', ({ message }) => {
-                        console.error(message);
-                    });
-        
-                    document.getElementById('togglePlay').onclick = function() {
-                      player.togglePlay();
-                    };
-        
-                    player.connect();
-                }
-            </script>
-        </div>
+<!--        <div id="home">-->
+<!--            <h1>Spotify Web Playback SDK Quick Start</h1>-->
+<!--        </div>-->
         <div id="footer">
             <!-- TODO: Make Playback Interface -->
             <div id="menu">
@@ -81,6 +40,46 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
+            <button id="togglePlay">Toggle Play</button>
+            <script src="https://sdk.scdn.co/spotify-player.js"></script>
+            <script>
+                window.onSpotifyWebPlaybackSDKReady = () => {
+                    const token = 'BQC3ifHfnfLdHzZ-cXTqBxgqYPGthcfuM3MY8vKDRffhQrxfEMhGB07R6szkdtp6zyeA8aE4-i-VVvbwMAT60wlfgufcM0u4Rg5JbyHALr3illsU4Y4MvotnyGw_W4psfnNXRxOikDdtIZ9OcWn8wQhG0i0ObsjaTBY7oxlSL1N47rcToH4c_kI';
+                    const player = new Spotify.Player({
+                        name: 'Web Playback SDK Quick Start Player',
+                        getOAuthToken: cb => { cb(token); },
+                        volume: 0.5
+                    });
+
+                    // Ready
+                    player.addListener('ready', ({ device_id }) => {
+                        console.log('Ready with Device ID', device_id);
+                    });
+
+                    // Not Ready
+                    player.addListener('not_ready', ({ device_id }) => {
+                        console.log('Device ID has gone offline', device_id);
+                    });
+
+                    player.addListener('initialization_error', ({ message }) => {
+                        console.error(message);
+                    });
+
+                    player.addListener('authentication_error', ({ message }) => {
+                        console.error(message);
+                    });
+
+                    player.addListener('account_error', ({ message }) => {
+                        console.error(message);
+                    });
+
+                    document.getElementById('togglePlay').onclick = function() {
+                        player.togglePlay();
+                    };
+
+                    player.connect();
+                }
+            </script>
 <!--             <p>This is an Open Source Project. <a href="https://github.com/suobset/hackUMassIX">Contribute Here!!</a></p>-->
         </div>
 
