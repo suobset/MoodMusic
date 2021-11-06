@@ -7,6 +7,14 @@ body
     font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
     background-color:#c2ccd6;
 }
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 #header 
 {
     width:100%;
