@@ -9,4 +9,3 @@ Sample nicked from <a href="https://github.com/suobset/iCons">suobset/iCons</a> 
 Sample shows an interactive chart in our page. Sample written by me in that all nighter. 
 
 -Kush 
-:)
