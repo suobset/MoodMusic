@@ -30,6 +30,15 @@ body
     font-size:35px;
     margin-left:20px;
 }
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('poster.jpg');
+        background-size: cover;
+    }
+}
 #home,#about,#contact
 {
     margin-top:100px;
