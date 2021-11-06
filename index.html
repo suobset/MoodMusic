@@ -1,33 +1,29 @@
-<html>
+<html lang="en">
     <head>
-        <title>Spotify Thing</title>
+        <title>HackUMass IX</title>
         <link rel="stylesheet" type="text/css" href="css/website_style.css">
         <script type="text/javascript" src="jquery.js"></script>
-
-        <script type="text/javascript">
-            function scrollto(div)
-            {
-            $('html,body').animate(
-            {
-            scrollTop: $("#"+div).offset().top
-            },'slow');
-            }
-        </script>
-         <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src = "js/about1.js"></script>
+        <script src="js/dropDown.js" type="text/javascript"></script>
     </head>
 
     <body>
-
-
-        <div id="header">
+    <!-- TODO: Make this dissapear until cursor moves -->
+     <div id="header">
         <h1>playBack</h1>
         </div>
         <link rel="stylesheet" type="text/css" href="css/menu_style.css">
+     <!-- TODO: Fix weird spacing issue in div home -->
         <div id="home">
+            <a href="#">Play</a><br>
+            <a href="#">Pause</a><br>
+            <a href="#">Back</a><br>
+            <a href="#">Forward</a><br>
+        </div>
+        <div id="footer">
+            <!-- TODO: Make Playback Interface -->
             <div id="menu">
                 <ul>
+                    <!-- TODO: Assign proper values -->
                     <li><a href="#">HOME</a></li>
                     <li id="categories"><a href="#">CATEGORIES +</a>
                         <ul>
@@ -48,49 +44,7 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
-        </div>
-
-<!--        <div id="about">-->
-
-<!--            <h1>Nicked my iCons website to act as a paceholder for our HackUMass</h1>-->
-
-<!--            <h1><a href="https://github.com/suobset/hackumassIX/blob/main/README.md">Read more here</a></h1>-->
-<!--            -->
-<!--            <p> We used the Google Slides API for the charts you see on this website. -->
-<!--                The API lets you create various charts for different data, mathematical models-->
-<!--                , and the like. Here is an example:-->
-<!--            </p>-->
-
-            <!--Div that will hold the dashboard-->
-            <div id="dashboard_div">
-                <!--Divs that will hold each control and chart-->
-                <div id="filter_div"></div>
-                <div id="chart_div"></div>
-            </div>
-            <style>
-                .dashboard_div {
-                      width: 900px;
-                      margin: 0 auto;
-                  }
-          </style>
-          <style>
-            .filter_div {
-                  width: 900px;
-                  margin: 0 auto;
-              }
-        </style>
-        <style>
-            .chart_div {
-                  width: 900px;
-                  margin: 0 auto;
-              }
-      </style>
-
-        </div>
-
-        <div id="footer">
-             <p>Playback Buttons Placeholder</p>
-             <p>This is an Open Source Project. <a href="https://github.com/suobset/hackUMassIX">Contribute Here!!</a></p>
+<!--             <p>This is an Open Source Project. <a href="https://github.com/suobset/hackUMassIX">Contribute Here!!</a></p>-->
         </div>
 
     </body>
