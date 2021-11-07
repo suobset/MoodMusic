@@ -77,6 +77,7 @@ function WebPlayback(props) {
     } else {
         return (
             <>
+                <h1 align = "center">Website Name</h1><br></br><br></br>
                 <div className="container">
                     <div className="main-wrapper">
 
@@ -85,56 +86,32 @@ function WebPlayback(props) {
                         <div className="now-playing__side">
                             <div className="now-playing__name">{current_track.name}</div>
                             <div className="now-playing__artist">{current_track.artists[0].name}</div>
-                            <div className="data">
-                            <span class="tooltiptext">
-                                <p>Emotion: <a id="valenceColor"></a> you've recently listened to music that is<b><a id="valenceString"></a></b></p>
-                                <p>Energy: <a id="energy"></a> you've listened to <b><a id="energy1"></a> energetic</b> songs.</p>
-                            </span>
-                            </div>
-
-                            <button className="btn-spotify" onClick={() => { player.previousTrack() }} >
-                                &lt;&lt;
-                            </button>
-
-                            <button className="btn-spotify" onClick={() => { player.togglePlay() }} >
-                                { is_paused ? "PLAY" : "PAUSE" }
-                            </button>
-
-                            <button className="btn-spotify" onClick={() => { player.nextTrack() }} >
-                                &gt;&gt;
-                            </button>
                         </div>
                     </div>
+                </div>
+                <div className = "buttons">
+                    <button className="btn-spotify" onClick={() => { player.previousTrack() }} >
+                        &lt;&lt;
+                    </button>
+
+                    <button className="btn-spotify" onClick={() => { player.togglePlay() }} >
+                        { is_paused ? "PLAY" : "PAUSE" }
+                    </button>
+
+                    <button className="btn-spotify" onClick={() => { player.nextTrack() }} >
+                        &gt;&gt;
+                    </button>
+                </div>
+                <div className="data">
+                            <span className="tooltiptext">
+                                <p>Emotion: <a id="valenceColor"></a> you've recently listened to music that is<b><a
+                                    id="valenceString"></a></b></p>
+                                <p>Energy: <a id="energy"></a> you've listened to <b><a id="energy1"></a> energetic</b> songs.</p>
+                            </span>
                 </div>
             </>
         );
     }
 }
 
- ////////// MUSIC VARIABLES ////////////
- var valence = '<%= d.valence %>';
- var energy = '<%= d.energy %>';
- //////////////////////////////////////
- var musicHues = ['monochrome', 'blue', 'green', 'purple', 'pink', 'red', 'orange', 'yellow'];
- var musicKHues = ['yellow', 'yellow', 'orange', 'red', 'red', 'pink', 'pink', 'purple', 'blue', 'blue', 'green', 'green'];
- var musicLums = ['light', 'bright', 'bright', 'bright', 'light', 'bright', 'light', 'bright', 'bright', 'light', 'bright', 'light'];
- /////////////////////////////////////
-
- function setup() {
-    // VALENCE -- Background color
-    var valenceColor = musicHues[Math.round(map(valence, 0.0, 1.0, 0, 7))];
-    document.getElementById("valenceColor").innerText = valenceColor.toString();
-
-    if (valence > 0.5)
-        document.getElementById("valenceString").innerText = "happy or cheerful";
-    else
-        document.getElementById("valenceString").innerText = "sad or angry";
-    if (energy > 0.5) {
-        document.getElementById("energy").innerText = "more";
-        document.getElementById("energy1").innerText = "more";
-    } else {
-        document.getElementById("energy").innerText = "less";
-        document.getElementById("energy1").innerText = "less";
-    }
- }
 export default WebPlayback

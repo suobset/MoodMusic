@@ -54,10 +54,13 @@ body {
   margin: 0 auto;
   justify-content: center;
   position: relative;
-  width: 80%;
+  width: 100%;
   z-index: 1;
 }
 
+.buttons{
+
+}
 .container {
   align-items: center;
   display: flex;
@@ -97,9 +100,9 @@ body {
 }
 
 .btn-spotify {
-  background-color:#44c767;
+  background-color: rgba(211, 53, 185, 0.75);
   border-radius:28px;
-  border:1px solid #18ab29;
+  border:1px solid rgba(177, 0, 145, 0.68);
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
@@ -112,6 +115,10 @@ body {
 .btn-spotify:active {
   position:relative;
   top:1px;
+}
+
+.data{
+  align: center;
 }
 
 img { background: transparent; }
