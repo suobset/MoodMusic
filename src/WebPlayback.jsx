@@ -87,10 +87,10 @@ function WebPlayback(props) {
 
                         <div className="now-playing__side">
                             <div className="now-playing__name">{current_track.name}</div>
-                            <div className="now-playing__artist">{current_track.artists[0].name}</div>
+                            <div className="now-playing__artist">{current_track.artists[0].name}</div><br></br><br></br><br></br><br></br><br></br>
                             <div className="data">
                                 <span className="tooltiptext">
-                                <p>Emotion: <a id="valenceColor"></a> you've recently listened to music that is<b><a id="valenceString"></a></b></p>
+                                    <p>Emotion: <a id="valenceColor"></a> you've recently listened to music that is<b><a id="valenceString"></a></b></p><br></br>
                                 <p>Energy: <a id="energy"></a> you've listened to <b><a id="energy1"></a> energetic</b> songs.</p>
                             </span>
                             </div>
