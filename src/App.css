@@ -133,14 +133,14 @@ body {
 .logoParent{
     Display: flex;
     height: 14vw;
-    Width: 103vw;
+    Width: 100vw;
     Align-Items: center;
     Justify-Content: center;
 }
 
 .logo{
   height: 130px;
-  width: 400px;
+  width: 300px;
 }
 
 img { background: transparent; }

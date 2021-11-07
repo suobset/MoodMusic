@@ -78,7 +78,7 @@ function WebPlayback(props) {
         return (
             <>
                 <div className="logoParent">
-                <img src={'https://i.imgur.com/JHua4Cu.png'} className="logo" style={{alignSelf: 'center'}}/>
+                <img src={'https://i.imgur.com/42UL83B.jpg'} className="logo" style={{alignSelf: 'center'}}/>
                 </div>
                 <div className="container">
                     <div className="main-wrapper">
