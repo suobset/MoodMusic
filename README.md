@@ -48,7 +48,7 @@ Implementing a more accurate mood detector using ML/AI, as well as utilize the Y
 
 We used React, Python, HTML/CSS, and Flask for languages. For tools: we relied heavily on VSCode, WebStorm, PyCharm, and GitHub.
 
-# izes we're going for:
+# Prizes we're going for:
 
  *  Best Software Hack
  *  Best Web Hack
